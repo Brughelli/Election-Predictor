@@ -1,0 +1,47 @@
+Michael Brughelli
+CSCI 4830 Final Project
+
+My project requires that NLTK is installed with the wordnet corpora and 
+the moviereviews corpora downloaded.  It also requires that TextBlob
+is installed with all Textblob corpora installed.
+
+To install NLTK: (Unix Instructions)
+
+	i.) Must download and install Setuptools -> https://pypi.python.org/pypi/setuptools#unix-wget
+   ii.) Install Pip: run 'sudo easy_install pip'
+  iii.) Install Numpy: run 'sudo pip install -U numpy'
+   iv.) Install NLTK: run 'sudo pip install -U nltk'
+    v.) Test installation: run 'python' then type 'import nltk'
+   
+To download NLTK corpora:
+	
+	i.) Run 'python' then type 'import nltk' followed by nltk.download()
+   ii.) A window will open showing the nltk downloader
+  iii.) Click on the File menu and select Change Download Directory to /usr/share/nltk_data
+   iv.) Select the wordnet and moviereviews corpora and donwload them
+
+To install TextBlob + TextBlob corpora:
+
+	i.) Type 'pip install -U textblob'
+   ii.) Type 'python -m textblob.download_corpora'
+
+To Run my py files:
+	
+	i.) Extract the entire contents of the Michael_Brughelli_4830_FINAL.zip file into a 
+		SINGLE directory
+   ii.)	Type 'python Classifier.py'
+  iii.) When prompted, choose between the 3 available training, testing, and marked data sets
+   iv.) Wait for the magical political race predictor to print the prediction and be amazed
+		on election day when it is correct!!
+
+Included files:
+
+	- Classifier.py					-the driver for the predictor
+	- DATASEN.csv					-the Senate race training data
+	- DATAGOV.csv					-the Governor race training data
+	- RvsD.csv						-general Republican vs. Democrat training data
+	- COSEN.csv						-the Senate race testing data
+	- COGOV.csv						-the Governor race testing data
+	- MarkedSEN.csv					-the Senate marked data (same as COSEN.csv but marked)
+	- MarledGOV.csv					-the Governor marked data (same as COGOV.csv but marked)
+	- README						-this extremely informative and well written document
